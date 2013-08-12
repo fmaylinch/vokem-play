@@ -1,4 +1,4 @@
-@(title: String, headerElements: Html = Html(""))(content: Html)
+@(title: String, headElements: Html = Html(""))(content: Html)
 
 <!DOCTYPE html>
 
@@ -14,7 +14,7 @@
         <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
 
         <!-- See moreScripts in http://www.playframework.com/documentation/2.0.4/JavaTemplateUseCases -->
-        @headerElements
+        @headElements
     </head>
     <body>
         @content
