@@ -9,6 +9,8 @@ object ApplicationBuild extends Build {
 
   val appDependencies = Seq(
     // Add your project dependencies here,
+    "com.google.inject" % "guice" % "3.0",
+    "org.mongodb" % "mongo-java-driver" % "2.11.2",
     javaCore,
     javaJdbc,
     javaEbean

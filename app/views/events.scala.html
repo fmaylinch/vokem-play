@@ -1,0 +1,36 @@
+@(events: List[model.Event])
+
+@* More head elements *@
+@headElements = {
+    <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/test.css")">
+}
+
+@main("Events", headElements) {
+
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">vokem.org</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+
+        <div class="row">
+        @if(events.isEmpty) {
+            <p>No events found</p>
+        } else {
+            @for(event <- events) {
+                <div class="span4">
+                    <h2><i class="icon-bullhorn"></i> @event.getTitle()</h2>
+                    <p>Sample description for @event.getTitle()</p>
+                    <p><a class="btn" href="#">View details <i class="icon-double-angle-right"></i></a></p>
+                </div>
+            }
+        }
+        </div>
+
+    </div> <!-- /container -->
+
+}

@@ -11,8 +11,9 @@ Vokem with Play Framework 2.1.3
 ### IntelliJ IDEA tips
 
 - Enter project folder and execute `play idea`. Then you can open project from IDEA.
-- From IDEA (with Play plugin installed) you can create a Play run configuration.
 - If you see errors in `Application` class: unmark `target/scala-2.10/sc_managed/main` as source root.
+- Every time you add more dependencies in Build.scala, repeat the previous points.
+- From IDEA (with Play plugin installed) you can create a Play run configuration.
 
 ### Markdown tips
 

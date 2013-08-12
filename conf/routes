@@ -8,5 +8,8 @@ GET     /                           controllers.Application.index()
 # Test page
 GET     /test                       controllers.Application.test()
 
+# Events page
+GET     /events                     controllers.Application.events()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
