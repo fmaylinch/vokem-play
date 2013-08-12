@@ -10,13 +10,13 @@ Vokem with Play Framework 2.1.3
 
 ### IntelliJ IDEA tips
 
-- Enter project folder and execute "play idea" and then you can open project from IDEA.
-- From IDEA (with Play plugin installed), you can create a Play run configuration.
-- Unmark as source root "target/scala-2.10/sc_managed/main" if you see errors in Application class.
+- Enter project folder and execute `play idea`. Then you can open project from IDEA.
+- From IDEA (with Play plugin installed) you can create a Play run configuration.
+- Unmark as source root `target/scala-2.10/sc_managed/main` if you see errors in `Application` class.
 
 ### Markdown tips
 
 To edit Markdown files you can use [Showdown] (faster) or [Markable] (nicer and you can save your pages).
 
-  [Showdown]: http://softwaremaniacs.org/playground/showdown-highlight/
+  [Showdown]: http://softwaremaniacs.org/playground/showdown-highlight
   [Markable]: http://markable.in
